@@ -1,0 +1,136 @@
+$bg-primary: #03faee;
+$bg-secondary: #f8f8f8;
+$color-primary: #8b8b8b;
+$shadow: #92f7f2;
+
+/* Body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Clases de uso general*/
+.cuadrado{
+    margin-top: 8vh;
+    position: absolute;
+    color: transparent;
+    background-color: #03faee;
+    width: 17.2vw;
+    height: 6vh;
+    z-index: -1;
+}
+.cuadrado-cards{
+    margin-top: 1vh;
+    position: absolute;
+    color: transparent;
+    background-color: #03faee;
+    width: 1vw;
+    height: 1vh;
+    z-index: -1;
+}
+/* Header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        nav{
+            width: 40%;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+        }
+}
+ul{
+    display: flex;
+    text-indent: 2vw;
+        li{
+            list-style: none;
+        }
+}
+/*Sección superior*/
+section{
+    margin-top: 5vh;
+    display: flex;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    line-height: 70px;
+    letter-spacing: 10px;
+    width: 60%;
+}
+button{
+    background-color: $bg-primary;
+    border-style:dashed;
+    border-radius: 10%;
+    width: 8vw;
+    height: 8vh;
+}
+/*Sección cards*/
+article{
+    background-color: #fdf6f6;
+    width: 35vw;
+    margin: 1%;
+    z-index: 1;
+        div{
+            font-weight: bold;
+            margin-top: 1.5%;
+            }
+                p{  
+                    margin-top: 1%;
+                }   
+}
+.circulo{
+    background-color: $bg-secondary;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 0.5px;
+    box-shadow: -6px 0px $shadow;
+    width: 5%;
+    height: 15%;
+    padding: 2%;
+}
+/*Footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35vh;    
+        a{
+            padding: 3%;
+        }    
+}
+footer div{
+    width: 15vw;
+    
+}
+footer .circulo{
+    border: 0;
+    width: 2vw;
+    height: 5vh;
+}
+
+/*Responsive para celulares*/
+@media (max-width: 480px) {
+    nav{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+    }
+    button{
+        width: 20vw;
+    }
+    article{
+        width: fit-content;
+    }
+    footer div{
+        width: 25vw;
+    }
+    footer .circulo{
+        height: 5vh;
+        width: 5vw;
+    }
+    .cuadrado-cards{
+        width: 3vw;
+    }
+}

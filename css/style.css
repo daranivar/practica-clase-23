@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* Body*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Clases de uso general*/
+.cuadrado {
+  margin-top: 8vh;
+  position: absolute;
+  color: transparent;
+  background-color: #03faee;
+  width: 17.2vw;
+  height: 6vh;
+  z-index: -1;
+}
+
+.cuadrado-cards {
+  margin-top: 1vh;
+  position: absolute;
+  color: transparent;
+  background-color: #03faee;
+  width: 1vw;
+  height: 1vh;
+  z-index: -1;
+}
+
+/* Header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  width: 40%;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  text-indent: 2vw;
+}
+ul li {
+  list-style: none;
+}
+
+/*Sección superior*/
+section {
+  margin-top: 5vh;
+  display: flex;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+  width: 60%;
+}
+
+button {
+  background-color: #03faee;
+  border-style: dashed;
+  border-radius: 10%;
+  width: 8vw;
+  height: 8vh;
+}
+
+/*Sección cards*/
+article {
+  background-color: #fdf6f6;
+  width: 35vw;
+  margin: 1%;
+  z-index: 1;
+}
+article div {
+  font-weight: bold;
+  margin-top: 1.5%;
+}
+article p {
+  margin-top: 1%;
+}
+
+.circulo {
+  background-color: #f8f8f8;
+  text-align: center;
+  border-radius: 50%;
+  border: solid 0.5px;
+  box-shadow: -6px 0px #92f7f2;
+  width: 5%;
+  height: 15%;
+  padding: 2%;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35vh;
+}
+footer a {
+  padding: 3%;
+}
+
+footer div {
+  width: 15vw;
+}
+
+footer .circulo {
+  border: 0;
+  width: 2vw;
+  height: 5vh;
+}
+
+/*Responsive para celulares*/
+@media (max-width: 480px) {
+  nav {
+    display: none;
+  }
+  section {
+    flex-direction: column;
+  }
+  button {
+    width: 20vw;
+  }
+  article {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer div {
+    width: 25vw;
+  }
+  footer .circulo {
+    height: 5vh;
+    width: 5vw;
+  }
+  .cuadrado-cards {
+    width: 3vw;
+  }
+}/*# sourceMappingURL=style.css.map */
